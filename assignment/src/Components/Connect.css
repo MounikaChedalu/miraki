@@ -1,0 +1,182 @@
+.login-form {
+    border: 2px solid black;
+    height: 350px;
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: linear-gradient(#BFF098, #6FD6FF);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .travelo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .nav ul li {
+    font-size: 1.2rem;
+   
+  }
+  
+  .nav ul li:first-of-type a {
+    font-weight: 900;
+    color: #023e8a;
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .brand {
+        width: 100%;
+        justify-content: space-between;
+        font-size: larger;
+    }
+  
+    .toggle {
+        display: block;
+    }
+  
+    .nav ul {
+        display: none;
+    }
+  
+    .nav button {
+        display: none;
+    }
+  }
+  
+  .responsive-nav {
+    display: none; /* Initially hide the responsive menu */
+    position: absolute;
+    z-index: 1;
+    top: 60px; /* Adjust the top position as needed */
+    background-color: lightcoral;
+    width: 100%;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .responsive-nav.active {
+    display: flex; 
+  }
+  
+  .responsive-nav ul {
+    list-style-type: none;
+    width: 100%;
+  }
+  
+  .responsive-nav ul li {
+    width: 100%;
+    margin: 1rem 0;
+    margin-left: 2rem;
+  }
+  
+  .responsive-nav ul li a {
+    text-decoration: none;
+    color: #FF5733; 
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .responsive-nav ul li:first-of-type a {
+    color: #023e8a;
+    font-weight: 900;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .login-form {
+      width: 90%; 
+      margin-left: 5%; 
+      margin-top: 20px; 
+      height: auto; 
+    }
+  }
+  
+  .name1, .phn {
+    width: 15vw;
+    height: 1vh;
+    justify-content: center;
+    margin-left: 85px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 20px;
+  }
+  
+  .message {
+    border-radius: 5px;
+    margin-left: 50px;
+    width: 15vw;
+    margin-top: 20px;
+  }
+  
+  .login-button {
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: #EE9CA7;
+    font-size: large;
+    margin-left: 220px;
+    margin-top: 30px;
+  }
+  
+  .label1 {
+    margin-left: 20px;
+    font-size: 14px;
+    font-size: large;
+  }
+  
+  .heading {
+    margin-left: 20%;
+    margin-top: 100px;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .name1, .phn, .message {
+      width: 90%; 
+      margin-left: 5%; 
+    }
+    .login-button{
+        width: 40%;
+        margin-left: 30%;
+        margin-bottom: 20px;
+    }
+  
+    .label1 {
+      font-size: medium; 
+      margin-left: 5%; 
+    }
+  
+    .heading {
+      margin-left: 5%; 
+    }
+  }
+  
